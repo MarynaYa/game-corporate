@@ -1,0 +1,75 @@
+// HERO //
+.baсkdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(47, 48, 58, 0.4),
+}
+.baсkdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+}
+/*Модальное окно + ФОРМА*/
+@media screen and (min-width: 340px) and (max-width: 480px) {
+    .modal {
+        width: 340px;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+    .modal {
+        width: 450px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .modal {
+        width: 528px;
+    }
+}
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    box-shadow: 0px 4px 4px 0px #00000040;
+
+    background-color: var(--bgr-color);
+    text-align: center;   
+}
+
+// HEDER //
+
+/*.header-menu {
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;  
+    padding: 50px 30px;
+    overflow-y: scroll;
+    background-color: rgba(47, 48, 58, 0.4);
+    z-index: 10;
+}
+.header-menu.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+}
+.header-menu__modal  {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    width: 480px;
+    
+
+    background-color: var(--bgr-color);
+    text-align: center;   
+
+}*/

@@ -1,0 +1,49 @@
+// header//
+
+.logo {
+    display: inline-block;
+    opacity: 1;
+    justify-content: flex-start;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  
+  
+    color: var(--accent-text);
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
+
+     @media screen and (max-width: 1199px) {
+        margin-right: 88px;  
+        font-size: 24px;
+        line-height: 1.17;
+    }
+    @media screen and (min-width: 1200px) {
+        margin-right: 92px;
+    }
+    
+&__title {
+    color: var(--primary-text-color);
+}
+}
+    
+    
+
+//footer //
+.logo-footer {
+    display: block;
+    padding: 0;  
+    margin-bottom: 20px; 
+
+    color: var(--accent-text);
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
+}
+.title-footer {
+    color: var(--herotitle);
+}
