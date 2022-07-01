@@ -15,509 +15,222 @@
 <body class="page">
   <!--Cap-->
     <header class="page-header">
-        <div class="conteiner main-div">
-            <a href="" class="logo">Web<span class="logo__title"> Studio</span>
+        <div class="container main-div">
+            <a href="" class="header-logo">
+                <svg class="header-logo__icon" width="40" height="40">                
+                    <use href="/images/teo.svg/sprite.svg#icon-logo"></use>
+                </svg>                    
             </a> 
-    
-            <button class="header-menu__btn" data-menu-button
-            type="button" 
-            aria-expanded="true" 
-            aria-controls="menu-conteiner" 
-            >
-                <svg class="header-menu__icon" width="24" height="24" aria-label="переключатель мобильного меню">
-                    <use class="header-menu__icon-cross" href="./images/sprite-contact.svg#icon-close-black-18dp-2-1-1"></use>
-                    <use class="header-menu__icon-menu" href="./images/sprite-contact.svg#icon-menu_24px"></use>
-                </svg>
-            </button>
-
-        <div class="header-menu" id="menu-conteiner" data-menu>
-         
-            <div class="header-menu__navigation">
-            <ul class="site-nav list">
-                <li class="site-nav__item">                                                                       
-                    <a class="site-nav__link site-nav__link--current" href="./index.html">Студия</a></li>
-                <li class="site-nav__item">
-                    <a class="site-nav__link" href="./portfolio.html">Портфолио</a></li>
-                <li class="site-nav__item">
-                    <a class="site-nav__link" href="./contact.html">Контакты</a></li>
-            </ul>             
-         </div>     
-         <div class="header-menu__contact">      
-            <ul class="site-list list">
-                <li class="site-list__item">  
-                 <a class="site-list__link-mail" href="mailto:info@devstudio.com" class="header-text">                 
-                      <svg class="site-list__icon" width="16" height="12" >
-                         <use href="./images/sprite-contact.svg#icon-envelope"></use>
-                     </svg>  
-                     info@devstudio.com</a></li>
-                    
-                 <li class="site-list__item">
-                     <a class="site-list__link-tell" href="tel:+380961111111" class="header-text">
-                     <svg class="site-list__icon" width="10" height="16" >
-                          <use href="./images/sprite-contact.svg#icon-smartphone"></use>
-                      </svg>  
-                      +38 096 111 11 11</a></li>                
-                 </ul>
-                 <ul class="site-social list">
-                    <li class="site-social__item">
-                        <a class="site-social__link" target="_blank" href="noopener noreferrer">Instagram</a>
-                    </li>
-                    <li class="site-social__item">
-                        <a class="site-social__link" target="_blank" href="noopener noreferrer">Twitter</a>
-                    </li>
-                    <li class="site-social__item">
-                        <a class="site-social__link" target="_blank" href="noopener noreferrer">Facebook</a>
-                    </li>
-                    <li class="site-social__item">
-                        <a class="site-social__link" target="_blank" href="noopener noreferrer">LinkedIn</a>
-                    </li>                                    
-                 </ul>
-         </div>
-      
-        </div>              
-                </div>      
-                 
-              </header>
+            <div class="header-button">
+                <button class="header-button__log">Log in</button>
+                <button class="header-button__register">Register</button>
+            </div>                 
+        </div>     
+    </header>
   <!--Main-->
     <main>
         <!--Hero-->
-        <section class="hero">
-                <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
-                <button type="button" class="hero__button" data-modal-open>Заказать услугу</button>
-                <div class="baсkdrop is-hidden" data-modal>
-                    <div class="modal">
-                        
-                        <form class="modal__form" autocomplete="off">
-                            <strong class="modal__text">Оставьте свои данные, мы вам перезвоним</strong>
-                            <div class="field">
-                                <label class="field__name" for="name">
-                                    <span class="stile-name">Имя</span>
-                                </label>                               
-                                <input class="field__user" type="text" name="name" id="name">
-                                <svg class="form-icon" width="18" height="18">
-                                    <use href="./images/sprite-modal-icon.svg#icon-person"></use>
-                                </svg>                   
-                            </div>
-                            <div class="field">
-                                <label class="field__name" for="phone">
-                                    <span class="stile-name">Телефон</span>
-                                </label>
-                                <input class="field__user" type="tell" name="phone" id="phone">
-                                <svg class="form-icon" width="18" height="18">
-                                <use href="./images/sprite-modal-icon.svg#icon-phone"></use>
-                                </svg>                 
-                            </div>
-                            <div class="field">
-                                <label class="field__name" for="mail">
-                                    <span class="stile-name">Почта</span>
-                                </label>
-                                <input class="field__user" type="email" name="mail" id="mail">  
-                                <svg class="form-icon" width="18" height="18">
-                                <use href="./images/sprite-modal-icon.svg#icon-email"></use>
-                                </svg>                   
-                            </div>
-                            <div class="comment-form">
-                                <label class="comment-form__name" for="comment">
-                                    <span class="stile-name">Комментарий</span>
-                                </label>
-                                <textarea class="field__comment" name="commit" rows="10" id="comment" placeholder="Введите текст"></textarea>                            
-                            </div>
-                            <div class="policy-form">
-                                <label class="policy-form__name" for="policy">
-                                    <input class="checkbox" type="checkbox" name="policy" id="policy" />
-                                    <span class="policy-icon"></span>                                  
-                                
-                                    <span class="stile-agree">Соглашаюсь с рассылкой и принимаю </span><span class="agree-text">Условия договора</span>
-                                </label>
-                            </div>
-                                <button type="submit" class="submit-btn">Отправить</button>                            
-                        </form>
-                            
-                            <button class="modal__btn" type="button" data-modal-close>
-                                <svg class="modal__icon" width="18" height="18">
-                                    <use href="./images/sprite-contact.svg#icon-close-black-18dp-2-1-1"></use>
-                                </svg>
-                            </button>
-                    </div>                  
-                </div>
-        </section>        
-        <!--Advantages-->
-        <section class="advantages section">
-            <div class="conteiner advantages-conteiner">               
-                <h2 class="section-title" hidden>Advantages</h2>
-                <ul class="advantages-list list">
-                    <li class="advantages-list__item">
-                        <div class="section-picture">
-                            <svg class="advantages__icon" width="70" height="120">
-                                <use href="./images/sprite-advanteges.svg#icon-antenna"></use>
-                            </svg>   
-                        </div>                                          
-                        <h3 class="advantages__title">Внимание к деталям</h3>
-                        <p class="advantages__text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
-                    </li>
-                    <li class="advantages-list__item">
-                        <div  class="section-picture">
-                            <svg class="advantages__icon" width="70" height="120">
-                                <use href="./images/sprite-advanteges.svg#icon-clock"></use>
-                            </svg>   
-                        </div>
-                        <h3 class="advantages__title">Пунктуальность</h3>
-                        <p class="advantages__text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
-                    </li>
-                    <li class="advantages-list__item">
-                        <div class="section-picture">
-                            <svg class="advantages__icon" width="70" height="120">
-                                <use href="./images/sprite-advanteges.svg#icon-diagram"></use>
-                            </svg>  
-                        </div>
-                        <h3 class="advantages__title">Планирование</h3>
-                        <p class="advantages__text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
-                    </li>
-                    <li class="advantages-list__item">
-                        <div  class="section-picture">
-                            <svg class="advantages__icon" width="70" height="120">
-                                <use href="./images/sprite-advanteges.svg#icon-astronaut"></use>
-                            </svg>   
-                        </div>
-                        <h3 class="advantages__title">Современные технологии</h3>
-                        <p class="advantages__text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
-                    </li>
-                </ul>
-            </div>           
-        </section>
-        <!--What_we_do-->
-        <section class="do section no-padding">
-            <div class="conteiner do-conteiner">
-                <h2 class="section-title centered">Чем мы занимаемся</h2>
-                <ul class="do-list list">
-                    <li class="do-list__item">
-                        <picture>
-                            <source  srcset="./images/images1/do/dp1.jpg, ./images/images1/do/dp2.jpg" type="image/webp" />
-
-                            <img src="./images/images1/do/dp1.jpg" alt="picture1" width="370">
-                        </picture>
-                        
-                       <div class="do-thumb">
-                           <p class="do-thumb__text">Десктопные приложения</p>
-                     </div>                                     
-                    </li>
-                    <li class="do-list__item">
-                        <picture>
-                            <source  srcset="./images/images1/do/mp1.jpg, ./images/images1/do/mp2.jpg" type="image/webp" />
-
-                            <img src="./images/images1/do/mp1.jpg" alt="picture2" width="370">
-                        </picture>
-                        
-                        <div class="do-thumb">
-                            <p class="do-thumb__text">Мобильные приложения</p>
-                        </div>
-                    </li>
-                    <li class="do-list__item">
-                        <picture>
-                            <source  srcset="./images/images1/do/dr1.jpg, ./images/images1/do/dr2.jpg" type="image/webp" />
-
-                            <img src="./images/images1/do/dr1.jpg"  alt="picture3" width="370">
-                        </picture>
-                        <div class="do-thumb">
-                            <p class="do-thumb__text">Дизайнерские решения</p>
-                        </div>
-                    </li>
-                </ul>
-            </div>           
-        </section>
-        <!--Team-->
-        <section class="team section">
-            <div class="conteiner team-conteiner">
-                <h2 class="section-title centered">Наша команда</h2>
-                <ul class="team-list list ">
-                    <li class="team-list__item">
-                        <img class="team-list__img" 
-                        srcset="./images/images1/team/id1.jpg 1x, ./images/images1/team/id2.jpg 2x"
-                        src="./images/images1/team/id1.jpg" 
-                        alt="Игорь Демьяненко"
-                        sizes="(min-width: 480px) 2x, (min-width: 787px) 1x">
-                        <div class="team-box">
-                            <h3 class="team-box__title">Игорь Демьяненко</h3>
-                            <p class="team-box__text">Product Designer</p>
-                            <ul class="cosial-list list"> 
-                                <li class="cosial-list__item">
-                                    <a class="cosial-list__link" href aria-label="instagram" target="_blank">
-                                        <svg class="cosial-list__icon" width="20" height="20">
-                                            <use href="./images/sprite-socialnetwork.svg#icon-instagram"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="cosial-list__item">
-                                    <a class="cosial-list__link" href aria-label="twitter" target="_blank">
-                                        <svg class="cosial-list__icon"  width="20" height="20">
-                                            <use href="./images/sprite-socialnetwork.svg#icon-twitter"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="cosial-list__item">
-                                    <a class="cosial-list__link" href aria-label="facebook" target="_blank">
-                                        <svg class="cosial-list__icon"  width="20" height="20">
-                                            <use href="./images/sprite-socialnetwork.svg#icon-facebook"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="cosial-list__item">
-                                    <a class="cosial-list__link" href aria-label="linkedin" target="_blank">
-                                        <svg class="cosial-list__icon"  width="20" height="20">
-                                            <use href="./images/sprite-socialnetwork.svg#icon-linkedin"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>                     
-                    </li>
-                    <li class="team-list__item">
-                         <img class="team-list__img" 
-                         srcset="./images/images1/team/or1.jpg 1x, ./images/images1/team/or2.jpg 2x"
-                         src="./images/images1/team/or1.jpg" 
-                         alt="Ольга Репина"
-                         sizes="(min-width: 480px) 2x, (min-width: 787px) 1x">
-                         <div class="team-box">
-                            <h3 class="team-box__title">Ольга Репина</h3>
-                            <p class="team-box__text">Frontend Developer</p>
-                            <ul class="cosial-list list">
-                                <li class="cosial-list__item">
-                                    <a class="cosial-list__link" href aria-label="instagram" target="_blank">
-                                        <svg class="cosial-list__icon" width="20" height="20">
-                                            <use href="./images/sprite-socialnetwork.svg#icon-instagram"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="cosial-list__item">
-                                    <a class="cosial-list__link" href aria-label="twitter" target="_blank">
-                                        <svg class="cosial-list__icon"  width="20" height="20">
-                                            <use href="./images/sprite-socialnetwork.svg#icon-twitter"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="cosial-list__item">
-                                    <a class="cosial-list__link" href aria-label="facebook" target="_blank">
-                                        <svg class="cosial-list__icon"  width="20" height="20">
-                                            <use href="./images/sprite-socialnetwork.svg#icon-facebook"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="cosial-list__item">
-                                    <a class="cosial-list__link" href aria-label="linkedin" target="_blank">
-                                        <svg class="cosial-list__icon"  width="20" height="20">
-                                            <use href="./images/sprite-socialnetwork.svg#icon-linkedin"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                            </ul>
-                         </div>                   
-                    </li>
-                    <li class="team-list__item">
-                     <img class="team-list__img" 
-                     srcset="./images/images1/team/nt1.jpg 1x, ./images/images1/team/nt2.jpg 2x"
-                     src="./images/images1/team/nt1.jpg" 
-                     alt="Николай Тарасов"
-                     sizes="(min-width: 480px) 2x, (min-width: 787px) 1x">
-                     <div class="team-box">
-                        <h3 class="team-box__title">Николай Тарасов</h3>
-                        <p class="team-box__text">Marketing</p>
-                        <ul class="cosial-list list">
-                            <li class="cosial-list__item">
-                                <a class="cosial-list__link" href aria-label="instagram" target="_blank">
-                                    <svg class="cosial-list__icon" width="20" height="20">
-                                        <use href="./images/sprite-socialnetwork.svg#icon-instagram"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="cosial-list__item">
-                                <a class="cosial-list__link" href aria-label="twitter" target="_blank">
-                                    <svg class="cosial-list__icon"  width="20" height="20">
-                                        <use href="./images/sprite-socialnetwork.svg#icon-twitter"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="cosial-list__item">
-                                <a class="cosial-list__link" href aria-label="facebook" target="_blank">
-                                    <svg class="cosial-list__icon"  width="20" height="20">
-                                        <use href="./images/sprite-socialnetwork.svg#icon-facebook"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="cosial-list__item">
-                                <a class="cosial-list__link" href aria-label="linkedin" target="_blank">
-                                    <svg class="cosial-list__icon"  width="20" height="20">
-                                        <use href="./images/sprite-socialnetwork.svg#icon-linkedin"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                        </ul>
-                     </div>                     
-                    </li>
-                    <li class="team-list__item">
-                        <img class="team-list__img" 
-                        srcset="./images/images1/team/me1.jpg 1x, ./images/images1/team/me2.jpg 2x"
-                        src="./images/images1/team/me1.jpg" 
-                        alt="Михаил Ермаков"
-                        sizes="(min-width: 480px) 2x, (min-width: 787px) 1x">
-                        <div class="team-box">
-                           <h3 class="team-box__title">Михаил Ермаков</h3>
-                           <p class="team-box__text">UI Designer</p>
-                           <ul class="cosial-list list">
-                               <li class="cosial-list__item">
-                                   <a class="cosial-list__link" href aria-label="instagram" target="_blank">
-                                       <svg class="cosial-list__icon" width="20" height="20">
-                                           <use href="./images/sprite-socialnetwork.svg#icon-instagram"></use>
-                                       </svg>
-                                   </a>
-                               </li>
-                               <li class="cosial-list__item">
-                                   <a class="cosial-list__link" href aria-label="twitter" target="_blank">
-                                       <svg class="cosial-list__icon"  width="20" height="20">
-                                           <use href="./images/sprite-socialnetwork.svg#icon-twitter"></use>
-                                       </svg>
-                                   </a>
-                               </li>
-                               <li class="cosial-list__item">
-                                   <a class="cosial-list__link" href aria-label="facebook" target="_blank">
-                                       <svg class="cosial-list__icon"  width="20" height="20">
-                                           <use href="./images/sprite-socialnetwork.svg#icon-facebook"></use>
-                                       </svg>
-                                   </a>
-                               </li>
-                               <li class="cosial-list__item">
-                                   <a class="cosial-list__link" href aria-label="linkedin" target="_blank">
-                                       <svg class="cosial-list__icon"  width="20" height="20">
-                                           <use href="./images/sprite-socialnetwork.svg#icon-linkedin"></use>
-                                       </svg>
-                                   </a>
-                               </li>
-                           </ul>
-                        </div>                     
-                       </li>
-                   
-                        </ul>
-                     </div>                  
-                    </li>
-                </ul>
-            </div>           
+        <section class="hero-section">
+            <div class="container hero-container">
+                <h1 class="hero-container__title">Твоя мечта в твоих руках!</h1>
+                <button type="button" class="hero-container__button" data-modal-open>Правила игры</button>
+            </div>
         </section>    
-    <!--PARTNERS-->
-    <section class="clients section">
-        <div class="conteiner clients-conteiner">
-            <h2 class="section-title centerd">Постоянные клиенты</h2>
-            <ul class="clients-list list">
-                <li class="clients-list__item">
-                    <a class="clients-list__link" href="">
-                        <svg class="clients-list__icon" width="106" height="60">
-                            <use href="./images/sprite-partners.svg#icon-group1">                              
-                            </use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="clients-list__item">
-                    <a class="clients-list__link" href="">
-                        <svg class="clients-list__icon" width="106" height="60">
-                            <use href="./images/sprite-partners.svg#icon-group2">                              
-                            </use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="clients-list__item">
-                    <a class="clients-list__link" href="">
-                        <svg class="clients-list__icon" width="106" height="60">
-                            <use href="./images/sprite-partners.svg#icon-group3">                              
-                            </use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="clients-list__item">
-                    <a class="clients-list__link" href="">
-                        <svg class="clients-list__icon" width="106" height="60">
-                            <use href="./images/sprite-partners.svg#icon-group4">                              
-                            </use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="clients-list__item">
-                    <a class="clients-list__link" href="">
-                        <svg class="clients-list__icon" width="106" height="60">
-                            <use href="./images/sprite-partners.svg#icon-group5">                              
-                            </use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="clients-list__item">
-                    <a class="clients-list__link" href="">
-                        <svg class="clients-list__icon" width="106" height="60">
-                            <use href="./images/sprite-partners.svg#icon-group6">                              
-                            </use>
-                        </svg>
-                    </a>
-                </li>
-            </ul>
-        </div>  
-    </section>
+        <!--Trailer-->    
+        <section class="trailer section">
+            <div class="trailer-container container">
+                <p class="trailer-container__text">______*** перед началом игры рекомендуем ознакомиться с мультифильмом Турбо :)</p>
+                <div class="trailer-container__video">               
+                <video class="video" width="655" height="430" controls>
+                    <source src="./movie.mp4/XRecorder_turbo.mp4" type="video/mp4">
+                </video>
+                </div>
+            </div>
+
+        </section>
+        <!--Category-->
+        <section class="category section">
+            <div class="category-container container">
+                <h1 class="category-container__title">Категории в игре</h1>
+                <ul class="category-container__list list">
+                    <li class="category-container__item">
+                        <ul class="intern list">
+                            <li class="present">
+                                <div class="present__name">
+                                    <picture class="present__picture">                                      
+                                        <img src="./images/teo_image.img/teo.jpg" alt="Theo">
+                                    </picture>
+                                <h2 class="present__title">Тео-стажер</h2>
+                                <p class="present__star">*</p>
+                                </div>
+                            </li>
+                            <li class="experience">
+                                <h3 class="experience__title">Стаж</h3>
+                                <p class="experience__text">от 1 месяца до 3 месяцев</p>
+                            </li><li class="motivation">
+                                <h3 class="motivation__title">Мотивация</h3>
+                                <p class="motivation__text">-20% от оклада</p>
+                            </li>
+                            <li class="responsible">
+                                <h3 class="responsible__title">Ответственность</h3>
+                                <p class="responsible__text">под руководством наставника и непосредственного руководителя</p>
+                            </li><li class="good">
+                                <h3 class="good__title">Социальные блага</h3>
+                                <p class="good__text">в установленных компанией лимитов</p>
+                            </li>
+                            <li class="points">
+                                <h3 class="points__title">Необходимые для перехода в следующей категории баллы</h3>
+                                <p class="points__text">50 баллов</p>
+                            </li>
+                            
+                            <li class="prize">
+                                <h3 class="prize__title">Приз</h3>
+                                <p class="prize__text">переход в основной штат</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="category-container__item">
+                        <ul class="intern list">
+                            <li class="present">
+                                <div class="present__name">
+                                    <picture class="present__picture">                                      
+                                        <img src="./images/teo_image.img/teo.jpg" alt="Theo">
+                                    </picture>
+                                <h2 class="present__title">Тео-специалист</h2>
+                                <p class="present__star">**</p>
+                                </div>
+                            </li>
+                            <li class="experience">
+                                <h3 class="experience__title">Стаж</h3>
+                                <p class="experience__text">от 3 месяцев до 9 месяцев</p>
+                            </li><li class="motivation">
+                                <h3 class="motivation__title">Мотивация</h3>
+                                <p class="motivation__text">оклад должности</p>
+                            </li>
+                            <li class="responsible">
+                                <h3 class="responsible__title">Ответственность</h3>
+                                <p class="responsible__text">под руководством непосредственного руководителя</p>
+                            </li><li class="good">
+                                <h3 class="good__title">Социальные блага</h3>
+                                <p class="good__text">в установленных компанией лимитов</p>
+                            </li>
+                            <li class="points">
+                                <h3 class="points__title">Необходимые для перехода в следующей категории баллы</h3>
+                                <p class="points__text">100 баллов</p>
+                            </li>
+                            
+                            <li class="prize">
+                                <h3 class="prize__title">Приз</h3>
+                                <p class="prize__text">переход в кадровый резерв</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="category-container__item">
+                        <ul class="intern list">
+                            <li class="present">
+                                <div class="present__name">
+                                    <picture class="present__picture">                                      
+                                        <img src="./images/teo_image.img/teo.jpg" alt="Theo">
+                                    </picture>
+                                <h2 class="present__title">Тео-профи</h2>
+                                <p class="present__star">***</p>
+                                </div>
+                            </li>
+                            <li class="experience">
+                                <h3 class="experience__title">Стаж</h3>
+                                <p class="experience__text">от 9 месяцев до 15 месяцев</p>
+                            </li><li class="motivation">
+                                <h3 class="motivation__title">Мотивация</h3>
+                                <p class="motivation__text">+20% от оклада</p>
+                            </li>
+                            <li class="responsible">
+                                <h3 class="responsible__title">Ответственность</h3>
+                                <p class="responsible__text">самостоятельность в рамках принятого функционала</p>
+                            </li><li class="good">
+                                <h3 class="good__title">Социальные блага</h3>
+                                <p class="good__text">дополнительные дни отпуска: от 2 до 5 дней</p>
+                                <p class="good__text">опалата обучения (при согласования с руководством)</p>
+                                <p class="good__text">опалата суточных (300грн/сутки)</p>
+                            </li>
+                            <li class="points">
+                                <h3 class="points__title">Необходимые для перехода в следующей категории баллы</h3>
+                                <p class="points__text">300 баллов</p>
+                            </li>
+                            
+                            <li class="prize">
+                                <h3 class="prize__title">Приз</h3>
+                                <p class="prize__text">переход в категорию Турбо, где есть возможность купить свою мечту</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="category-container__item">
+                        <ul class="intern list">
+                            <li class="present">
+                                <div class="present__name">
+                                    <picture class="present__picture">                                      
+                                        <img src="./images/teo_image.img/teo.jpg" alt="Theo">
+                                    </picture>
+                                <h2 class="present__title">Тео-Турбо</h2>
+                                <p class="present__star">****</p>
+                                </div>
+                            </li>
+                            <li class="experience">
+                                <h3 class="experience__title">Стаж</h3>
+                                <p class="experience__text">от 15 месяцев до 24 месяцев</p>
+                            </li><li class="motivation">
+                                <h3 class="motivation__title">Мотивация</h3>
+                                <p class="motivation__text">+30% от оклада</p>
+                            </li>
+                            <li class="responsible">
+                                <h3 class="responsible__title">Ответственность</h3>
+                                <p class="responsible__text">возможноть самостоятельно курировать проекты</p>
+                            </li><li class="good">
+                                <h3 class="good__title">Социальные блага</h3>
+                                <p class="good__text">дополнительные дни отпуска: от 2 до 5 дней</p>
+                                <p class="good__text">опалата обучения (при согласования с руководством)</p>
+                                <p class="good__text">опалата суточных (300грн/сутки)</p>
+                            </li>
+                            <li class="points">
+                                <h3 class="points__title">Необходимые для покупки Мечты баллы</h3>
+                                <p class="points__text">350 баллов</p>
+                            </li>
+                            
+                            <li class="prize">
+                                <h3 class="prize__title">Приз</h3>
+                                <p class="prize__text">МЕЧТА</p>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>
+
+        </section>
+      
 </main>
   <!--Attic-->
   <footer class="footer section no-padding">    
     <div class="conteiner footer-conteiner">
         <div class="box-logo">
-            <a href="" class="logo-footer">
-                Web<span class="title-footer"> Studio</span>
-            </a>
+            <a href="" class="header-logo">
+                <svg class="header-logo__icon" width="40" height="40">                
+                    <use href="/images/teo.svg/sprite.svg#icon-logo"></use>
+                </svg>                    
+            </a> 
                 <div class="footer-text">
                 <p class="adress">
-                    г. Киев, пр-т Леси Украинки, 26
+                    г. Одесса, ул. Грушевского, хх
                 </p>
                 <a href="mailto:info@devstudio.com" class="adress-mail">info@devstudio.com</a> 
                 <a href="tel:+380961111111" class="adress-tel">+38 096 111 11 11</a>
             </div>
         </div>
-            <div class="conteiner join">
-            <h2 class="join__titl">присоединяйтесь</h2>
-            <ul class="join-list list">
-                <li class="join-list__item">
-                                <a class="join-list__link" href aria-label="instagram" target="_blank">
-                                    <svg class="join-list__icon" width="20" height="20">
-                                        <use href="./images/sprite-socialnetwork.svg#icon-instagram"></use>
-                                    </svg>
-                                </a>
-                </li>
-                <li class="join-list__item">
-                                <a class="join-list__link" href aria-label="twitter" target="_blank">
-                                    <svg class="join-list__icon" width="20" height="20">
-                                        <use href="./images/sprite-socialnetwork.svg#icon-twitter"></use>
-                                    </svg>
-                                </a>
-                </li>
-                <li class="join-list__item">
-                                <a class="join-list__link" href aria-label="facebook" target="_blank">
-                                    <svg class="join-list__icon" width="20" height="20">
-                                        <use href="./images/sprite-socialnetwork.svg#icon-facebook"></use>
-                                    </svg>
-                                </a>
-                </li>
-                <li class="join-list__item">
-                                <a class="join-list__link" href aria-label="linkedin" target="_blank">
-                                    <svg class="join-list__icon" width="20" height="20">
-                                        <use href="./images/sprite-socialnetwork.svg#icon-linkedin"></use>
-                                    </svg>
-                                </a>
-                </li>
-            </ul>
-        </div>      
-        <div class="mailing-form">
-            <h2 class="mailing-titl">Подпишитесь на рассылку</h2>
-            <Form class="subscriber-form" autocomplete="off">
-                <label for="user_email" class="form-hidden">E-mail</label>
-                    <input class="subscriber-email" type="email" name="email" id="user_email" placeholder="E-mail"/>
-                    <button type="submit" class="subscriber-btn">Подписаться
-                        <svg class="send-icon" width="24" height="24">
-                            <use href="./images/sprite-modal-icon.svg#icon-icon-send-1"></use>
-                        </svg>
-                    </button>                      
-            </Form>
-        </div>
+
+           
+   
     </div>        
 </footer>
     <script src="./js/modal.js"></script>
