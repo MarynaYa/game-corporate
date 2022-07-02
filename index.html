@@ -21,9 +21,121 @@
                     <use href="/images/teo.svg/sprite.svg#icon-logo"></use>
                 </svg>                    
             </a> 
+
             <div class="header-button">
-                <button class="header-button__log">Log in</button>
-                <button class="header-button__register">Register</button>
+                <button class="header-button__log" data-log-open>Log in</button>             
+
+                    <div class="log is-hidden" data-log>
+                        <form class="log__form" autocomplete="off">
+                            <strong class="log__text">Для входа в игру введите свой логин и пароль</strong>
+                            <div class="field">
+                                <label class="field__name" for="name">
+                                    <span class="stile-name">Логин</span>
+                                </label>                               
+                                <input class="field__user" type="text" name="name" id="name">                                             
+                            </div>
+                            <div class="field">
+                                <label class="field__name" for="pasv">
+                                    <span class="stile-name">Пароль</span>
+                                </label>
+                                <input class="field__user" type="text" name="name" id="name">                                                                        
+                            </div>
+                            <button type="submit" class="submit-btn">Войти</button>  
+                        </form>
+                        <button class="log__btn" type="button" data-log-close>
+                            <svg class="log__icon" width="18" height="18">
+                                <use href="./images/teo.svg/sprite.svg#icon-close-black-18dp-2-1-1"></use>
+                            </svg>
+                        </button>
+                </div>
+               
+
+                <button class="header-button__register" data-register-open>Register</button>
+                <div class="registration is-hidden" data-register>
+                    <form class="registration__form" autocomplete="off">                        
+                        <strong class="registration__text">Оставьте свои данные, мы ваc зарегистрируем</strong>
+                        <div class="data">
+                            <label class="data__name" for="name">
+                                <span class="stile-name">ФИО</span>
+                            </label>                               
+                            <input class="data__user" type="text" name="name" id="name">   
+                            <label class="field__name" for="name">
+                                <span class="stile-name">ФОТО</span>
+                            </label>                               
+                            <input class="data__foto" type="text" name="name" id="name">  
+                                                       
+                        </div>
+                        <div class="field">
+                            <label class="field__name" for="pasv">
+                                <span class="stile-name">Дата рождения</span>
+                            </label>
+                            <input class="field__user" type="text" name="name" id="name">                                                                        
+                        </div>
+                        <div class="field">
+                            <label class="field__name" for="pasv">
+                                <span class="stile-name">Контактный номер</span>
+                            </label>
+                            <input class="field__user" type="text" name="name" id="name">                                                                        
+                        </div>
+                        <div class="field">
+                            <label class="field__name" for="pasv">
+                                <span class="stile-name">Электронный адрес</span>
+                            </label>
+                            <input class="field__user" type="text" name="name" id="name">                                                                        
+                        </div>
+                        <div class="field">
+                            <label class="field__name" for="pasv">
+                                <span class="stile-name">Адрес проживания</span>
+                            </label>
+                            <input class="field__user" type="text" name="name" id="name">                                                                        
+                        </div>
+                        <div class="field">
+                            <label class="field__name" for="pasv">
+                                <span class="stile-name">Должность</span>
+                            </label>
+                            <input class="field__user" type="text" name="name" id="name">                                                                        
+                        </div>
+                        <div class="field">
+                            <label class="field__name" for="pasv">
+                                <span class="stile-name">Cемейное положение</span>
+                            </label>
+                            <input class="field__user" type="text" name="name" id="name">                                                                        
+                        </div>
+                        <div class="field">
+                            <label class="field__name" for="pasv">
+                                <span class="stile-name">Паспортные данные</span>
+                            </label>
+                            <input class="field__user" type="text" name="name" id="name">                                                                        
+                        </div>
+                        <div class="field">
+                            <label class="field__name" for="pasv">
+                                <span class="stile-name">Данные ИНН</span>
+                            </label>
+                            <input class="field__user" type="text" name="name" id="name">                                                                        
+                        </div>
+                        <div class="field">
+                            <label class="field__name" for="pasv">
+                                <span class="stile-name">Специальность по образовании</span>
+                            </label>
+                            <input class="field__user" type="text" name="name" id="name">                                                                        
+                        </div>
+                        <div class="field">
+                            <label class="field__name" for="pasv">
+                                <span class="stile-name">Предыдущие опыт работы</span>
+                            </label>
+                            <input class="field__user" type="text" name="name" id="name">                                                                        
+                        </div>
+
+                        <button type="submit" class="save-btn">Сохранить</button>  
+                        <button type="submit" class="submit-btn">Войти</button>  
+                    </form>
+
+                    <button class="registration__btn" type="button" data-register-close>
+                        <svg class="registration__icon" width="18" height="18">
+                            <use href="./images/teo.svg/sprite.svg#icon-close-black-18dp-2-1-1"></use>
+                        </svg>
+                    </button>
+            </div>
             </div>                 
         </div>     
     </header>
@@ -48,6 +160,56 @@
             </div>
 
         </section>
+        <!--Prize-->
+        <section class="prize section">
+            <section class="gallery">
+                <div class="gallery__container container">
+                        <ul class="gallery__list">
+                                <li class="gallery__item">
+                                        <img class="gallery__img"                                               
+                                                src="./images/gallery.img/house1.jpg" alt="key house" loading="lazy" />
+                                </li>
+                                <li class="gallery__item gallery__item--down">
+                                        <img class="gallery__img"                                             
+                                                src="./images/gallery.img/Ferrari.jpg" alt="Ferrari" loading="lazy" />
+            
+                                        <img class="gallery__img"                                               
+                                                src="./images/gallery.img/relax1.jpg" alt="relax" loading="lazy" />
+                                </li>
+                                <li class="gallery__item gallery__item--2x">
+                                        <img class="gallery__img gallery__img--2x" 
+                                             
+                                                src="./images/gallery.img/ip13.jpg" alt="fruit ice cream" loading="lazy"/>
+            
+                                        <img class="gallery__img gallery__img--2x" 
+                                               
+                                                src="./images/gallery.img/car-1.jpg" alt="ice cream" loading="lazy" />
+                                </li>
+                                <li class="gallery__item gallery__item--deep-down">
+                                        <img class="gallery__img" 
+                                                
+                                                src="./images/gallery.img/edic2.jpg" alt="desserts" loading="lazy" />
+                                        <img class="gallery__img"                                                
+                                                src="./images/gallery.img/relax2.jpg" alt="ice cream with toppings" loading="lazy" />
+                                </li>
+                                <li class="gallery__item">
+                                        <img class="gallery__img"                                                
+                                                src="./images/gallery.img/ip1.jpg" alt="natural ice cream" loading="lazy" />
+                                        <img class="gallery__img" 
+                                               
+                                                src="./images/gallery.img/edic1.jpg" alt="cold drinks" loading="lazy" />
+                                </li>
+                                <li class="gallery__item">
+                                        <img class="gallery__img"                                                
+                                                src="./images/gallery.img/house2.jpg" alt="delicious desserts" loading="lazy" />
+                               
+                                        <img class="gallery__img"                                                
+                                                src="./images/gallery.img/bukovel2.jpg" alt="delicious desserts" loading="lazy" />
+                                </li>
+                        </ul>
+                </div>
+            </section>
+        </section>
         <!--Category-->
         <section class="category section">
             <div class="category-container container">
@@ -55,149 +217,191 @@
                 <ul class="category-container__list list">
                     <li class="category-container__item">
                         <ul class="intern list">
-                            <li class="present">
-                                <div class="present__name">
+                            <li class="present">                             
                                     <picture class="present__picture">                                      
-                                        <img src="./images/teo_image.img/teo.jpg" alt="Theo">
+                                        <img src="./images/teo_image.img/teo.jpg" width="280" height="280" alt="Theo">
                                     </picture>
+
+                                <div class="present__name">
                                 <h2 class="present__title">Тео-стажер</h2>
-                                <p class="present__star">*</p>
+                                <div class="present__star">
+                                <svg class="present__icon" width="16" height="16">
+                                    <use href="./images/teo.svg/sprite.svg#icon-star-empty"></use>
+                                </svg>
+                                </div>
                                 </div>
                             </li>
-                            <li class="experience">
-                                <h3 class="experience__title">Стаж</h3>
-                                <p class="experience__text">от 1 месяца до 3 месяцев</p>
-                            </li><li class="motivation">
-                                <h3 class="motivation__title">Мотивация</h3>
-                                <p class="motivation__text">-20% от оклада</p>
+                            <li class="box-category">
+                                <h3 class="box-category__title">Стаж</h3>
+                                <p class="box-category__text">от 1 месяца до 3 месяцев</p>
                             </li>
-                            <li class="responsible">
-                                <h3 class="responsible__title">Ответственность</h3>
-                                <p class="responsible__text">под руководством наставника и непосредственного руководителя</p>
-                            </li><li class="good">
-                                <h3 class="good__title">Социальные блага</h3>
-                                <p class="good__text">в установленных компанией лимитов</p>
+                            <li class="box-category">
+                                <h3 class="box-category__title">Мотивация</h3>
+                                <p class="box-category__text">-20% от оклада</p>
                             </li>
-                            <li class="points">
-                                <h3 class="points__title">Необходимые для перехода в следующей категории баллы</h3>
-                                <p class="points__text">50 баллов</p>
+                            <li class="box-category">
+                                <h3 class="box-category__title">Ответственность</h3>
+                                <p class="box-category__text">под руководством назначенного наставника</p>
+                            </li><li class="box-category">
+                                <h3 class="box-category__title">Социальные блага</h3>
+                                <p class="goot-text">в установленных компанией лимитов</p>
+                            </li>
+                            <li class="box-category">
+                                <h3 class="box-category__title">min баллов</h3>
+                                <p class="box-category__text">50 баллов</p>
                             </li>
                             
-                            <li class="prize">
-                                <h3 class="prize__title">Приз</h3>
-                                <p class="prize__text">переход в основной штат</p>
+                            <li class="box-category">
+                                <h3 class="box-category__title">Приз</h3>
+                                <p class="box-category__text">переход в основной штат</p>
                             </li>
                         </ul>
                     </li>
                     <li class="category-container__item">
                         <ul class="intern list">
-                            <li class="present">
-                                <div class="present__name">
+                            <li class="present">                             
                                     <picture class="present__picture">                                      
-                                        <img src="./images/teo_image.img/teo.jpg" alt="Theo">
+                                        <img src="./images/teo_image.img/teo.jpg" width="280" height="280" alt="Theo">
                                     </picture>
+
+                                <div class="present__name">
                                 <h2 class="present__title">Тео-специалист</h2>
-                                <p class="present__star">**</p>
+                                <div class="present__star">
+                                <svg class="present__icon" width="16" height="16">
+                                    <use href="./images/teo.svg/sprite.svg#icon-star-empty"></use>
+                                </svg>
+                                <svg class="present__icon" width="16" height="16">
+                                    <use href="./images/teo.svg/sprite.svg#icon-star-empty"></use>
+                                </svg>
+                                </div>
                                 </div>
                             </li>
-                            <li class="experience">
-                                <h3 class="experience__title">Стаж</h3>
-                                <p class="experience__text">от 3 месяцев до 9 месяцев</p>
-                            </li><li class="motivation">
-                                <h3 class="motivation__title">Мотивация</h3>
-                                <p class="motivation__text">оклад должности</p>
+                            <li class="box-category">
+                                <h3 class="box-category__title">Стаж</h3>
+                                <p class="box-category__text">от 3 месяцев до 9 месяцев</p>
                             </li>
-                            <li class="responsible">
-                                <h3 class="responsible__title">Ответственность</h3>
-                                <p class="responsible__text">под руководством непосредственного руководителя</p>
-                            </li><li class="good">
-                                <h3 class="good__title">Социальные блага</h3>
-                                <p class="good__text">в установленных компанией лимитов</p>
+                            <li class="box-category">
+                                <h3 class="box-category__title">Мотивация</h3>
+                                <p class="box-category__text">оклад должности</p>
                             </li>
-                            <li class="points">
-                                <h3 class="points__title">Необходимые для перехода в следующей категории баллы</h3>
-                                <p class="points__text">100 баллов</p>
+                            <li class="box-category">
+                                <h3 class="box-category__title">Ответственность</h3>
+                                <p class="box-category__text">под руководство своего руководителя</p>
+                            </li><li class="box-category">
+                                <h3 class="box-category__title">Социальные блага</h3>
+                                <p class="goot-text">в установленных компанией лимитов</p>
+                            </li>
+                            <li class="box-category">
+                                <h3 class="box-category__title">min баллов</h3>
+                                <p class="box-category__text">100 баллов</p>
                             </li>
                             
-                            <li class="prize">
-                                <h3 class="prize__title">Приз</h3>
-                                <p class="prize__text">переход в кадровый резерв</p>
+                            <li class="box-category">
+                                <h3 class="box-category__title">Приз</h3>
+                                <p class="box-category__text">переход в кадровый резерв</p>
                             </li>
                         </ul>
                     </li>
                     <li class="category-container__item">
                         <ul class="intern list">
-                            <li class="present">
-                                <div class="present__name">
+                            <li class="present">                               
                                     <picture class="present__picture">                                      
-                                        <img src="./images/teo_image.img/teo.jpg" alt="Theo">
+                                        <img src="./images/teo_image.img/teo.jpg" width="280" height="280" alt="Theo">
                                     </picture>
+
+                                <div class="present__name">
                                 <h2 class="present__title">Тео-профи</h2>
-                                <p class="present__star">***</p>
+                                <div class="present__star">
+                                <svg class="present__icon" width="16" height="16">
+                                    <use href="./images/teo.svg/sprite.svg#icon-star-empty"></use>
+                                </svg>
+                                <svg class="present__icon" width="16" height="16">
+                                    <use href="./images/teo.svg/sprite.svg#icon-star-empty"></use>
+                                </svg>
+                                <svg class="present__icon" width="16" height="16">
+                                    <use href="./images/teo.svg/sprite.svg#icon-star-empty"></use>
+                                </svg>
+                                </div>
                                 </div>
                             </li>
-                            <li class="experience">
-                                <h3 class="experience__title">Стаж</h3>
-                                <p class="experience__text">от 9 месяцев до 15 месяцев</p>
-                            </li><li class="motivation">
-                                <h3 class="motivation__title">Мотивация</h3>
-                                <p class="motivation__text">+20% от оклада</p>
+                            <li class="box-category">
+                                <h3 class="box-category__title">Стаж</h3>
+                                <p class="box-category__text">от 9 месяцев до 15 месяцев</p>
                             </li>
-                            <li class="responsible">
-                                <h3 class="responsible__title">Ответственность</h3>
-                                <p class="responsible__text">самостоятельность в рамках принятого функционала</p>
-                            </li><li class="good">
-                                <h3 class="good__title">Социальные блага</h3>
-                                <p class="good__text">дополнительные дни отпуска: от 2 до 5 дней</p>
-                                <p class="good__text">опалата обучения (при согласования с руководством)</p>
-                                <p class="good__text">опалата суточных (300грн/сутки)</p>
+                            <li class="box-category">
+                                <h3 class="box-category__title">Мотивация</h3>
+                                <p class="box-category__text">+20% от оклада</p>
                             </li>
-                            <li class="points">
-                                <h3 class="points__title">Необходимые для перехода в следующей категории баллы</h3>
-                                <p class="points__text">300 баллов</p>
+                            <li class="box-category">
+                                <h3 class="box-category__title">Ответственность</h3>
+                                <p class="box-category__text">самостоятельность в рамках принятого функционала</p>
                             </li>
-                            
-                            <li class="prize">
-                                <h3 class="prize__title">Приз</h3>
-                                <p class="prize__text">переход в категорию Турбо, где есть возможность купить свою мечту</p>
+                            <li class="box-category">
+                                <h3 class="box-category__title">Социальные блага</h3>
+                                <p class="box-category__text">к отпуску: + 2 дня</p>
+                                <p class="box-category__text">обучение: 50% оплата</p>
+                                <p class="box-category__text">суточных: 150грн/сутки</p>
+                            </li>
+                            <li class="box-category">
+                                <h3 class="box-category__title">min баллов</h3>
+                                <p class="box-category__text">300 баллов</p>
+                            </li>                            
+                            <li class="box-category">
+                                <h3 class="box-category__title">Приз</h3>
+                                <p class="box-category__text">переход в категорию Турбо</p>
                             </li>
                         </ul>
                     </li>
                     <li class="category-container__item">
                         <ul class="intern list">
-                            <li class="present">
-                                <div class="present__name">
+                            <li class="present">                              
                                     <picture class="present__picture">                                      
-                                        <img src="./images/teo_image.img/teo.jpg" alt="Theo">
+                                        <img src="./images/teo_image.img/teo.jpg" width="280" height="280" alt="Theo">
                                     </picture>
+                                    
+                                <div class="present__name">
                                 <h2 class="present__title">Тео-Турбо</h2>
-                                <p class="present__star">****</p>
+                                <div   class="present__star">                          
+                                <svg class="present__icon" width="16" height="16">
+                                    <use href="./images/teo.svg/sprite.svg#icon-star-empty"></use>
+                                </svg>
+                                <svg class="present__icon" width="16" height="16">
+                                    <use href="./images/teo.svg/sprite.svg#icon-star-empty"></use>
+                                </svg>
+                                <svg class="present__icon" width="16" height="16">
+                                    <use href="./images/teo.svg/sprite.svg#icon-star-empty"></use>
+                                </svg>
+                                <svg class="present__icon" width="16" height="16">
+                                    <use href="./images/teo.svg/sprite.svg#icon-star-empty"></use>
+                                </svg>
+                                </div>
                                 </div>
                             </li>
-                            <li class="experience">
-                                <h3 class="experience__title">Стаж</h3>
-                                <p class="experience__text">от 15 месяцев до 24 месяцев</p>
-                            </li><li class="motivation">
-                                <h3 class="motivation__title">Мотивация</h3>
-                                <p class="motivation__text">+30% от оклада</p>
+                            <li class="box-category">
+                                <h3 class="box-category__title">Стаж</h3>
+                                <p class="box-category__text">от 15 месяцев до 24 месяцев</p>
                             </li>
-                            <li class="responsible">
-                                <h3 class="responsible__title">Ответственность</h3>
-                                <p class="responsible__text">возможноть самостоятельно курировать проекты</p>
-                            </li><li class="good">
-                                <h3 class="good__title">Социальные блага</h3>
-                                <p class="good__text">дополнительные дни отпуска: от 2 до 5 дней</p>
-                                <p class="good__text">опалата обучения (при согласования с руководством)</p>
-                                <p class="good__text">опалата суточных (300грн/сутки)</p>
+                            <li class="box-category">
+                                <h3 class="box-category__title">Мотивация</h3>
+                                <p class="box-category__text">+30% от оклада</p>
                             </li>
-                            <li class="points">
-                                <h3 class="points__title">Необходимые для покупки Мечты баллы</h3>
-                                <p class="points__text">350 баллов</p>
+                            <li class="box-category">
+                                <h3 class="box-category__title">Ответственность</h3>
+                                <p class="box-category__text">возможноть самостоятельно курировать проекты</p>
+                            </li><li class="box-category">
+                                <h3 class="box-category__title">Социальные блага</h3>
+                                <p class="box-category__text">к отпуску: + 5 дней</p>
+                                <p class="box-category__text">обучение: 100% оплата</p>
+                                <p class="box-category__text">суточных: 300грн/сутки</p>
+                            </li>
+                            <li class="box-category">
+                                <h3 class="box-category__title">min баллов для МЕЧТЫ</h3>
+                                <p class="box-category__text">350 баллов</p>
                             </li>
                             
-                            <li class="prize">
-                                <h3 class="prize__title">Приз</h3>
-                                <p class="prize__text">МЕЧТА</p>
+                            <li class="box-category">
+                                <h3 class="box-category__title">Приз</h3>
+                                <p class="box-category__text">МЕЧТА</p>
                             </li>
                         </ul>
                     </li>
@@ -221,11 +425,11 @@
                 </svg>                    
             </a> 
                 <div class="footer-text">
-                <p class="adress">
+                <p class="footer-text__adress">
                     г. Одесса, ул. Грушевского, хх
                 </p>
-                <a href="mailto:info@devstudio.com" class="adress-mail">info@devstudio.com</a> 
-                <a href="tel:+380961111111" class="adress-tel">+38 096 111 11 11</a>
+                <a href="mailto:info@devstudio.com" class="footer-text__adress-mail">info@devstudio.com</a> <br>
+                <a href="tel:+380961111111" class="footer-text__adress-tel">+38 096 111 11 11</a>
             </div>
         </div>
 
@@ -233,8 +437,8 @@
    
     </div>        
 </footer>
-    <script src="./js/modal.js"></script>
-    <script src="./js/menu.js"></script>
+    <script src="./js/log.js"></script>
+    <script src="./js/register.js"></script>
   </body>
 </html>
 

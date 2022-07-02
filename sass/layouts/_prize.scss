@@ -1,0 +1,23 @@
+.gallery__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.gallery__item {
+    &:not(:last-child) {
+        margin-right: 0.5%;
+    }
+}
+.gallery__img {
+    border-radius: 8%;
+
+    transition: 500ms transform cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    
+
+    &:hover, &:focus {
+        cursor: pointer;
+        transform: scale(120% , 120%);
+    }
+}

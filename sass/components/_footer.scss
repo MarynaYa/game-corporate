@@ -1,4 +1,33 @@
 .footer {
-    padding: o;
+    padding: 20px;
     background-image: linear-gradient(to right, #010320 30%, #050d79 70%);    
+}
+.box-logo {
+    display: block;
+    margin-left: 20px;
+}
+.footer-text {
+    width: 240px;
+    height: 85px;
+    margin-bottom: 12px;
+    margin-top: 0;
+    color: var(--herotitle);
+
+    &__adress {
+    margin-bottom: 12px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.71;
+    text-align: left;
+    }
+
+    &__adress-mail,
+    &__adress-tel {
+        text-decoration: none;
+        color: var(--herotitle);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.71;
+        text-align: left;
+    }
 }
