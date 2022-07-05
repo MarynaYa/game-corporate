@@ -14,8 +14,31 @@
 }
 .modal {
     position: absolute;
-    top: 80%;
-    left: 80%;
-    transform: translate(-20%, -20%); 
+    top: 50%;
+    left: 50%;
+    width: 800px;
+    height: 800px;
+    padding: 100px 20px 60px 20px;
+    transform: translate(-50%, -50%); 
     background-color: var(--herotitle);
+    overflow: scroll;
+    text-align: left;
+
+    &__btn {
+        position: absolute;
+        top: 60px;
+        right: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        margin: 0;   
+        width: 30px;
+        height: 30px;
+        background-color: transparent;
+        border: 1px solid var(--accent-bc);     
+        border-radius: 50%; 
+        cursor: pointer;
+        z-index: 3;
+    }
 }
